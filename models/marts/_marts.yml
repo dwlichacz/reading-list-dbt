@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_reading_sessions
+    description: One row per reading attempt, joined to book details. Join to dim_books on book_id.
+    columns:
+      - name: entry_id
+        description: Primary key.
+        data_tests: [unique, not_null]
+
+  - name: dim_books
+    description: One row per book, including books never started.
+    columns:
+      - name: book_id
+        description: Primary key.
+        data_tests: [unique, not_null]

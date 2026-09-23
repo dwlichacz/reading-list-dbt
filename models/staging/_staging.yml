@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_books
+    description: One row per book in the catalogue. Text trimmed, numbers typed.
+    columns:
+      - name: book_id
+        description: Primary key.
+        data_tests: [unique, not_null]
+      - name: title
+        data_tests: [not_null]
+      - name: author
+        data_tests: [not_null]
+
+  - name: stg_reading_log
+    description: >
+      One row per reading attempt. A reread is a separate row.
+      Status, format, rating, and dates are normalized from free-text spellings.
+    columns:
+      - name: entry_id
+        description: Primary key.
+        data_tests: [unique, not_null]
+      - name: book_id
+        data_tests: [not_null]
+      - name: status
+        data_tests: [not_null]
+      - name: started_on
+        data_tests: [not_null]
+      - name: book_format
+        data_tests: [not_null]

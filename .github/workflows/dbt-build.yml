@@ -1,0 +1,29 @@
+name: dbt build
+
+# Every push and pull request rebuilds the whole project from scratch
+# and runs every data test and unit test. A red X means something broke.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check mock data generator is reproducible
+        run: |
+          python scripts/generate_mock_data.py
+          git diff --exit-code seeds/
+
+      - name: dbt build (seeds, models, tests)
+        run: dbt build

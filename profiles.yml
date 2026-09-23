@@ -1,0 +1,9 @@
+# Local DuckDB profile. No accounts or credentials needed:
+# `dbt build` creates reading_list.duckdb in the project folder.
+reading_list:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: reading_list.duckdb
+      threads: 4

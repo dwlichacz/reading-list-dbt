@@ -1,0 +1,39 @@
+name: reading_list
+version: "0.1.0"
+config-version: 2
+
+profile: reading_list
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  reading_list:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+
+seeds:
+  reading_list:
+    # Land everything as text, the way a raw export arrives.
+    # Typing and cleanup are the staging layer's job, not the loader's.
+    raw_books:
+      +column_types:
+        book_id: varchar
+        title: varchar
+        author: varchar
+        genres: varchar
+        page_count: varchar
+        year_published: varchar
+    raw_reading_log:
+      +column_types:
+        entry_id: varchar
+        book_id: varchar
+        status: varchar
+        date_started: varchar
+        date_finished: varchar
+        rating: varchar
+        format: varchar

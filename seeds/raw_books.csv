@@ -1,0 +1,71 @@
+book_id,title,author,genres,page_count,year_published
+1, Project Hail Mary,Andy Weir,Science Fiction,476,2021
+2,The Martian,Andy Weir,Science Fiction,369,2011
+3,Dune,Frank Herbert,Science Fiction|classics,,1965
+4,Neuromancer,William Gibson,science fiction|Cyberpunk,271,1984
+5,The Left Hand of Darkness,Ursula K. Le Guin,Science Fiction|classics,304,1969
+6,Children of Time,Adrian Tchaikovsky,science fiction,600,2015
+7,Recursion,Blake Crouch,science fiction|Thriller,326,2019
+8,Dark Matter,Blake Crouch,Science Fiction|Thriller,342,2016
+9,Station Eleven,Emily St. John Mandel,Literary Fiction|Science Fiction,,2014
+10, Klara and the Sun,Kazuo Ishiguro,Literary Fiction|Science Fiction,303,2021
+11,Never Let Me Go,Kazuo Ishiguro,Literary Fiction,288,2005
+12,The Remains of the Day,Kazuo Ishiguro,Literary Fiction|Classics,245,1989
+13,"Tomorrow, and Tomorrow, and Tomorrow",Gabrielle Zevin,literary fiction,401,2022
+14,The Name of the Wind,Patrick Rothfuss,Fantasy,662,2007
+15,Mistborn: The Final Empire,Brandon Sanderson,Fantasy,,2006
+16,The Way of Kings,Brandon Sanderson,Fantasy,1007,2010
+17,The Hobbit,J.R.R. Tolkien,Fantasy|Classics,310,1937
+18,A Wizard of Earthsea,Ursula K. Le Guin,Fantasy|Classics,183,1968
+19,The Night Circus,Erin Morgenstern,Fantasy,387,2011
+20,Gone Girl  , Gillian Flynn,Thriller|Mystery,415,2012
+21,The Silent Patient, Alex Michaelides,Thriller|Mystery,336,2019
+22,Big Little Lies,Liane Moriarty,Mystery,460,2014
+23,The Girl with the Dragon Tattoo,Stieg Larsson,thriller|Mystery,465,2005
+24,And Then There Were None,Agatha Christie,Mystery|classics,272,1939
+25,1984,George Orwell,Classics|Science Fiction,328,1949
+26,Brave New World,Aldous Huxley,Classics|Science Fiction,268,1932
+27,The Great Gatsby,F. Scott Fitzgerald,Classics,180,1925
+28,Of Mice and Men, John Steinbeck,classics,107,1937
+29,"Thinking, Fast and Slow", Daniel Kahneman,Nonfiction|Psychology,499,2011
+30,Sapiens, Yuval Noah Harari,Nonfiction|history,443,2011
+31,Atomic Habits,James Clear,Nonfiction|self help,320,2018
+32,Deep Work,Cal Newport,Nonfiction|Productivity,296,2016
+33,The Signal and the Noise,Nate Silver,Nonfiction|Data,534,2012
+34,Storytelling with Data,Cole Nussbaumer Knaflic,Nonfiction|data,288,2015
+35, Weapons of Math Destruction,Cathy O'Neil,Nonfiction|Data,272,2016
+36,How to Lie with Statistics,Darrell Huff,Nonfiction|Data|classics,142,1954
+37,Naked Statistics,Charles Wheelan,nonfiction|Data,282,2013
+38,Designing Data-Intensive Applications  ,Martin Kleppmann,Nonfiction|technology,616,2017
+39,The Pragmatic Programmer,David Thomas,Nonfiction|Technology,352,1999
+40,Clean Code,Robert C. Martin,Nonfiction|Technology,464,2008
+41,The Phoenix Project,Gene Kim,Fiction|Technology,345,2013
+42,"Blood, Sweat, and Pixels", Jason Schreier,Nonfiction|Video Games,304,2017
+43,Masters of Doom,David Kushner,Nonfiction|Video Games|Biography,335,2003
+44, Press Reset,Jason Schreier,Nonfiction|Video Games,304,2021
+45,Ready Player One,Ernest Cline,Science Fiction|Video Games,374,2011
+46,Shoe Dog,Phil Knight,Nonfiction|Biography|Business,386,2016
+47,Steve Jobs, Walter Isaacson,Nonfiction|Biography,656,2011
+48,The Big Short,Michael Lewis,Nonfiction|Business,266,2010
+49,Moneyball,Michael Lewis  ,nonfiction|Sports|Data,288,2003
+50,Freakonomics,Steven D. Levitt,Nonfiction|Economics,268,2005
+51,Educated,Tara Westover,Nonfiction|Memoir,334,2018
+52,Born a Crime,Trevor Noah,Nonfiction|Memoir,288,2016
+53,The Body Keeps the Score,Bessel van der Kolk,nonfiction|Psychology,464,2014
+54,Into Thin Air,Jon Krakauer,Nonfiction|Adventure,333,1997
+55,The Road,Cormac McCarthy,Literary Fiction,287,2006
+56,Life of Pi, Yann Martel,Literary Fiction|Adventure,319,2001
+57,The Handmaid's Tale,Margaret Atwood  ,Literary Fiction|Classics,311,1985
+58,Circe,Madeline Miller,fantasy|Mythology,393,2018
+59,The Song of Achilles,Madeline Miller,Fantasy|Mythology,378,2011
+60,Mythos,Stephen Fry,Nonfiction|mythology,,2017
+61,Hyperion,Dan Simmons,Science Fiction|Classics,482,1989
+62, Foundation,Isaac Asimov,Science Fiction|classics,255,1951
+63,The Three-Body Problem,Liu Cixin,Science Fiction,400,2008
+64,Piranesi,Susanna Clarke,fantasy|Literary Fiction,272,2020
+65,The Fifth Season,N.K. Jemisin  ,Fantasy|Science Fiction,468,2015
+66,Rebecca,Daphne du Maurier,Mystery|Classics,449,1938
+67,Range,David Epstein,Nonfiction|Psychology,,2019
+68,The Undoing Project,Michael Lewis,Nonfiction|Psychology|Biography,362,2016
+69,Algorithms to Live By  ,Brian Christian,Nonfiction|Data,368,2016
+70,The Art of Game Design,Jesse Schell,Nonfiction|Video Games,600,2008
