@@ -6,3 +6,7 @@ logs/
 .user.yml
 __pycache__/
 .venv/
+
+# OS and editor files
+.DS_Store
+.idea/
