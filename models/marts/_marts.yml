@@ -7,6 +7,13 @@ models:
       - name: entry_id
         description: Primary key.
         data_tests: [unique, not_null]
+      - name: book_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_books')
+                field: book_id
 
   - name: dim_books
     description: One row per book, including books never started.
@@ -14,3 +21,5 @@ models:
       - name: book_id
         description: Primary key.
         data_tests: [unique, not_null]
+      - name: times_finished
+        data_tests: [not_null]
