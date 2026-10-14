@@ -21,10 +21,23 @@ models:
         description: Primary key.
         data_tests: [unique, not_null]
       - name: book_id
-        data_tests: [not_null]
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_books')
+                field: book_id
       - name: status
-        data_tests: [not_null]
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['finished', 'reading', 'dnf']
       - name: started_on
         data_tests: [not_null]
       - name: book_format
-        data_tests: [not_null]
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['hardcover', 'paperback', 'ebook', 'audiobook']
