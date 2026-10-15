@@ -11,6 +11,8 @@ models:
         data_tests: [not_null]
       - name: author
         data_tests: [not_null]
+      - name: genres
+        description: Raw pipe-delimited genre string. Use stg_book_genres for filtering by genre.
 
   - name: stg_reading_log
     description: >
@@ -41,3 +43,19 @@ models:
           - accepted_values:
               arguments:
                 values: ['hardcover', 'paperback', 'ebook', 'audiobook']
+
+  - name: stg_book_genres
+    description: One row per book per genre. Genres converted to simple title case.
+    columns:
+      - name: book_genre_id
+        description: Surrogate key - book_id plus the genre, lowercased with underscores. Unique per book per genre.
+        data_tests: [unique, not_null]
+      - name: book_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_books')
+                field: book_id
+      - name: genre
+        data_tests: [not_null]
