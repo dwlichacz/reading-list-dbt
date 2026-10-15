@@ -24,15 +24,8 @@ cleaned as (
         end as status,
 
         -- Dates arrive as either 2024-03-05 or 03/05/2024: try both
-        coalesce(
-            try_strptime(trim(date_started), '%Y-%m-%d'),
-            try_strptime(trim(date_started), '%m/%d/%Y')
-        )::date as started_on,
-
-        coalesce(
-            try_strptime(trim(date_finished), '%Y-%m-%d'),
-            try_strptime(trim(date_finished), '%m/%d/%Y')
-        )::date as ended_on,
+        {{ parse_messy_date('date_started') }} as started_on,
+        {{ parse_messy_date('date_finished') }} as ended_on,
 
         -- Rating: "4", "4/5", or blank -> integer or null
         try_cast(
